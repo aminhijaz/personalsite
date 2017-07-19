@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Amin Hijaz|Hobbies</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<link rel="icon" href="home.jpg">
+<link rel="stylesheet" type="text/css" href="../static/hobbies.css">
+<script type="text/javascript">
+  function arabic() {
+    document.getElementById('football').innerHTML = 'كرة قدم';
+    document.getElementById('footballp').innerHTML = 'انا احب كرة القدم و بدأت لعبها منذ عمر مبكر و العبها اسبوعيا';
+    document.getElementById('programming').innerHTML = 'البرمجة';
+    document.getElementById('programmingp').innerHTML = 'الب المفضلة وانا اراها كوظيفتي المستقبليرمجة هواياتية';
+    document.getElementById('hobbies').innerHTML = 'هواياتي';
+}
+  function english() {
+    document.getElementById('football').innerHTML = 'Football!';
+    document.getElementById('footballp').innerHTML = 'I like football and I am good at it, I started playing it from an early age and I play it weekly';
+    document.getElementById('programming').innerHTML = 'Programming!';
+    document.getElementById('programmingp').innerHTML = 'Programming is my favorite hobby and I see it as my future job.';
+}
+</script>
+
+</head>
+ <body background="../static/bg.jpg">
+<ul>
+  <li><img src="../static/amin.jpg" width=200px height=200px" style="padding:0"></li>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="hobbies.html" class="active">Hobbies</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="projects.html">Projects</a></li>
+
+</ul>
+<br>
+<div style="margin-left:25%;padding:1px 16px;height:100px; width:65%; display:block;">
+    <h1 id="title">Amin Hijaz|Hobbies</h1>
+<img src="../static/arabic.png" width="100px" height="100px" onclick="arabic();" style="border-radius: 50%;">
+<img src="../static/usa.png" width="100px" height="100px" onclick="english();" style="border-radius: 50%;">
+
+  <h1 id="hobbies">My Hobbies</h1>
+  <h2 id="football" style="color:red; margin-left:20px;">Football!</h2>
+  <br>
+  <img src="../static/football.jpg">
+  <p id="footballp" style="color:yellow; font-size:30px";>I like football and I am good at it, I started playing it from an early age and I play it weekly</p>
+  <br>
+  <h2 id="programming" style="color:red; margin-left:20px;">Programming!</h2>
+  <img src="../static/coding.jpg" width=400px; height=300px>
+  <p id="programmingp" style="color:yellow; font-size:30px";>Programming is my favorite hobby and I see it as my future job.</p>
+
+</div>
+<img src="">
+</body>
+</html>

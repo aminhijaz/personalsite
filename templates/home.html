@@ -1,0 +1,41 @@
+{% extends "index.html" %}
+{% block title %}
+Home
+{% endblock %}
+
+<link rel="icon" href="home.jpg">
+<link rel="stylesheet" type="text/css" href=" {{url_for('static' , filename="hobbies.css")}}">
+<script type="text/javascript">
+	function arabic() {
+		document.getElementById('welcome').innerHTML = 'اهلا بكم في موقعي';
+		document.getElementById('intro').innerHTML = 'امين حجاز عمري 16 عام من فلسطين هذا موقعي سأتكلم عن حياتي و هواياتي وامور اخرى';
+		document.getElementById('Copyrights').innerHTML = 'جميع الحقوق محفوظة لامين حجاز';
+}
+	function english() {
+		document.getElementById('welcome').innerHTML = 'Welcome to my website';
+		document.getElementById('intro').innerHTML = 'I am Amin Hijaz ,16 year old Palestinian teenager This is my website,I am talking about my life,hobbies and a lot of other things';
+		document.getElementById('Copyrights').innerHTML = 'Copyrights reserved &copy; for Amin Hijaz - 2017';
+</script>
+{% block body %}
+<div style="margin-left:25%;padding:1px 16px;height:100px; width:65%; display:block;">
+  <h1 id="title">Amin Hijaz Website</h1>
+
+<img src="../static/arabic.png" width="100px" height="100px" onclick="arabic();" style="border-radius: 50%;">
+<img src="../static/usa.png" width="100px" height="100px" onclick="english();" style="border-radius: 50%;">
+  <h1 id="welcome">Welcome to my website</h1>
+  <p id="intro" style="color:yellow; font-size:50px">I am Amin Hijaz ,16 year old Palestinian teenager This is my website,I am talking about my life,hobbies and a lot of other things</p>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center>
+<p id="Copyrights" style="color:white; font-size:30px;"> Copyrights reserved &copy; for Amin Hijaz - 2017<p>
+</center>
+
+
+</div>
+{% endblock %}
+

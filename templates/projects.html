@@ -1,0 +1,62 @@
+{% extends "index.html" %}
+{% block body%}
+
+<head>
+{% block title %}
+projects
+
+{% endblock %}
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+<link rel="icon" href="../static/home.jpg">
+<link rel="stylesheet" type="text/css" href="../static/hobbies.css">
+{% block head %}
+<script type="text/javascript">
+	function arabic() {
+		document.getElementById('fullname').innerHTML = 'الاسم:امين حاتم امين حجاز';
+		document.getElementById('date').innerHTML = 'تاريخ الميلاد:07/03/2001';
+		document.getElementById('country').innerHTML = 'البلد:فلسطين';
+		document.getElementById('wecode').innerHTML = 'عضو في برنامج ويكود';
+		document.getElementById('Amideast').innerHTML = 'عضو في امديست';
+		document.getElementById('Programming').innerHTML = 'لغات البرمجة:HTML,CSS,PHP';
+		document.getElementById('school').innerHTML = 'يدرس في مدرسة الامير حسن';
+    document.getElementById('about').innerHTML = 'عن نفسي';
+		document.getElementById("arabic").style.direction = "rtl";
+}
+	function english() {
+		document.getElementById('fullname').innerHTML = 'Full Name:Amin Hatem Amin Hijaz';
+		document.getElementById('date').innerHTML = 'Date Of Birth:07/03/2001';
+		document.getElementById('country').innerHTML = 'Country:Palestine';
+		document.getElementById('wecode').innerHTML = 'We Code Program Memeber';
+		document.getElementById('Amideast').innerHTML = 'Amideast Access Memeber';
+		document.getElementById('Programming').innerHTML = 'Programming Languages:HTML,CSS,Python,PHP';
+		document.getElementById('school').innerHTML = 'Student At Al Ameer Hassan School';
+    document.getElementById('about').innerHTML = 'About Me';
+		document.getElementById("arabic").style.direction = "rtl";
+}
+
+
+</script>
+{% endblock %}
+
+
+<div id="text" style="margin-left:25%;padding:1px 16px;height:100px; width:65%; display:block;">
+  <h1 id="title">Amin Hijaz|Projects</h1>
+
+<img src="../static/arabic.png" width="100px" height="100px" onclick="arabic();" style="border-radius: 50%;">
+<img src="../static/usa.png" width="100px" height="100px" onclick="english();" style="border-radius: 50%;">
+
+  <h1 id="about">Projects</h1>
+  <img src="../static/square.png" width="30%" height="300px" >
+  <img src="../static/game.png" width="60%" style="padding-left:70px">
+
+  <br>
+  <a href="../static/square.py"><img src="../static/download.png" width="30%" height="200px"></a>
+    <a href="../static/Running_game.zip"><img src="../static/download.png" width="60%" height="200px" style="padding-left:70px"></a>
+
+
+  </div>
+
+</div>
+</body>
+ {% endblock %}
